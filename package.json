@@ -1,0 +1,23 @@
+{
+  "name": "faa-info",
+  "version": "1.0.0",
+  "engine-strict": true,
+  "engines": {
+    "node": "4.3.2"
+  },
+  "description": "tutorial project on aws alexa",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "alexa-app": "^2.3.4",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "mocha": "^3.2.0",
+    "request": "^2.79.0",
+    "request-promise": "^4.1.1"
+  }
+}

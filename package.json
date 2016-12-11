@@ -2,6 +2,12 @@
   "name": "faa-info",
   "version": "1.0.0",
   "repository": "https://github.com/chrisdevwords/faa-info",
+  "keywords": [
+    "node",
+    "alexa",
+    "lambda",
+    "aws"
+  ],
   "engine-strict": true,
   "engines": {
     "node": "4.3.2"

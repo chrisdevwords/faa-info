@@ -20,7 +20,7 @@ Compiling For Upload
 --------------------
 You can zip up the relevant files for upload by running:
 ````
-$ npm build
+$ npm run build
 ````
 This should output a zip file for upload to the AWS Lambda Console.
 

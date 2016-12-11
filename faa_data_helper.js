@@ -38,7 +38,9 @@ class FAADataHelper {
 
     formatWeather(data) {
         const weather = data.weather;
-        const temp = data.temp;
+        const temp = data.temp
+            .replace('C', 'Celsius')
+            .replace('F', 'degrees Farenheit');
         const wind = data.wind;
         return `The current weather conditions are ${weather}, ${temp} and wind ${wind}.`;
     }

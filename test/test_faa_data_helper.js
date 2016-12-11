@@ -46,7 +46,7 @@ describe('FAADataHelper', () => {
                 const formatted = subject.formatAirportStatus(status);
                 const expected = 'There is currently no delay at Hartsfield-Jackson ' +
                     'Atlanta International. The current weather conditions are Light Snow, ' +
-                    '36.0 F (2.2 C) and wind Northeast at 9.2mph.';
+                    '36.0 degrees Farenheit (2.2 Celsius) and wind Northeast at 9.2mph.';
                 expect(formatted)
                     .to.eq(expected);
             });
@@ -61,7 +61,8 @@ describe('FAADataHelper', () => {
                         'Atlanta International. The average delay time is 57 minutes. ' +
                         'Delay is because of the following: AIRLINE REQUESTED DUE TO DE-ICING ' +
                         'AT AIRPORT / DAL AND DAL SUBS ONLY. The current weather conditions ' +
-                        'are Light Snow, 36.0 F (2.2 C) and wind Northeast at 9.2mph.';
+                        'are Light Snow, 36.0 degrees Farenheit (2.2 Celsius) ' +
+                        'and wind Northeast at 9.2mph.';
                 expect(formatted)
                     .to.eq(expected);
             });

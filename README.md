@@ -45,4 +45,8 @@ To test this repo locally, sim link this project inside the examples/apps direct
 ````
 $ ln -s ~/Projects/faa-info ./examples/apps/
 ````
-You may want to add this sim link to your copy of that project's .gitignore. 
+You may want to add this sim link to the .gitignore in alexa-app-server:
+```
+$ echo "examples/apps/faa-info" >> .gitignore
+
+```

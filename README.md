@@ -3,6 +3,7 @@ Alexa Airport Info
 Based on the [Developing Alexa Skills Locally](https://www.bignerdranch.com/blog/tags/alexa-skills-kit/) tutorial:
 * Step 1: [Developing Alexa Skills Locally with Node.js: Setting Up Your Local Environment](https://www.bignerdranch.com/blog/developing-alexa-skills-locally-with-nodejs-setting-up-your-local-environment/)
 * Step 2: [Developing Alexa Skills Locally with Node.js: Implementing an Intent with Alexa-app and Alexa-app-server](https://www.bignerdranch.com/blog/developing-alexa-skills-locally-with-nodejs-implementing-an-intent-with-alexa-app-and-alexa-app-server/)
+* Step 3: [Developing Alexa Skills Locally with Node.js: Deploying Your Skill to Staging](https://www.bignerdranch.com/blog/developing-alexa-skills-locally-with-nodejs-deploying-your-skill-to-staging/)
 
 With a few differences:
 * Uses Node v4.3.2 for more [ES6 Sexiness](http://node.green/).

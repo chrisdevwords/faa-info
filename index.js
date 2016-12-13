@@ -6,18 +6,18 @@ const Alexa = require('alexa-app');
 const app = new Alexa.app('airportinfo');
 const FAADataHelper = require('./faa_data_helper');
 
+
 app.launch((req, res) => {
     const prompt = 'For delay information, tell me an Airport code.';
     res.say(prompt).reprompt(prompt).shouldEndSession(false);
 });
-
 
 const slots = {
     'AIRPORTCODE': 'FAACODES'
 };
 
 const utterances = [
-    '{|flight|airport} {|delay|status} {|info} {|for} {-|AIRPORTCODE}'
+    '{|flight|airport} {|delay|status} {|info|information} {|for|at} {-|AIRPORTCODE}'
 ];
 
 app.intent('airportinfo', { slots, utterances },

@@ -55,6 +55,13 @@ app.intent('airportinfo', { slots, utterances },
     }
 );
 
+const exitFunction = (req, res) => {
+    res.say('Goodbye!');
+};
+
+app.intent('AMAZON.StopIntent', exitFunction);
+app.intent('AMAZON.CancelIntent', exitFunction);
+
 app.launch((req, res) => {
     const prompt = 'For delay information, tell me an Airport code.';
     res
@@ -62,7 +69,6 @@ app.launch((req, res) => {
         .reprompt(prompt)
         .shouldEndSession(false);
 });
-
 
 // hack for dynamic utterances
 const utterancesMethod = app.utterances;

@@ -7,11 +7,6 @@ const app = new Alexa.app('airportinfo');
 const FAADataHelper = require('./faa_data_helper');
 
 
-app.launch((req, res) => {
-    const prompt = 'For delay information, tell me an Airport code.';
-    res.say(prompt).reprompt(prompt).shouldEndSession(false);
-});
-
 const slots = {
     'AIRPORTCODE': 'FAACODES'
 };
@@ -60,6 +55,16 @@ app.intent('airportinfo', { slots, utterances },
     }
 );
 
+app.launch((req, res) => {
+    const prompt = 'For delay information, tell me an Airport code.';
+    res
+        .say(prompt)
+        .reprompt(prompt)
+        .shouldEndSession(false);
+});
+
+
+// hack for dynamic utterances
 const utterancesMethod = app.utterances;
 app.utterances = () =>  utterancesMethod().replace(/\{\-\|/g, '{');
 

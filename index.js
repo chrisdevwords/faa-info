@@ -33,9 +33,6 @@ app.intent('airportinfo', { slots, utterances },
                 .say(prompt)
                 .reprompt(reprompt)
                 .shouldEndSession(false);
-
-            return true;
-
         } else {
             const faaHelper = new FAADataHelper();
             faaHelper
@@ -45,6 +42,7 @@ app.intent('airportinfo', { slots, utterances },
                     console.log(message);
                     res
                         .say(message)
+                        .shouldEndSession(true)
                         .send();
                 })
                 .catch(err => {
@@ -53,11 +51,12 @@ app.intent('airportinfo', { slots, utterances },
                     res
                         .say(prompt)
                         .reprompt(reprompt)
-                        .shouldEndSession(false)
+                        .shouldEndSession(true)
                         .send();
                 });
-            return false;
         }
+
+        return false;
     }
 );
 

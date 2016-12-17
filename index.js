@@ -57,7 +57,7 @@ app.intent('airportinfo', { slots, utterances },
 
 app.intent('AMAZON.HelpIntent', (req, res) => {
    res.say(
-       'To request information on an airport,'
+       'To request information on an airport,' +
         'request it by its status code.' +
        'For example, to get information about ' +
         'Atlanta Hartsfield airport, say airport status for ATL'

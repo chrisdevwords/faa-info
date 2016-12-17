@@ -16,7 +16,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "build:zip": "rm -rf files.zip && zip files -r ./node_modules *.js ./package.json"
+    "build:zip": "rm -rf faa-info.zip && zip faa-info -r ./node_modules *.js ./package.json"
   },
   "author": "",
   "license": "ISC",

@@ -1,0 +1,5 @@
+deployment:
+  staging:
+    branch: master
+    commands:
+      - aws s3 cp ./faa-info.zip s3://aws-lambda-zips/

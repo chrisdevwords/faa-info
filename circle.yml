@@ -2,4 +2,4 @@ deployment:
   staging:
     branch: master
     commands:
-      - aws s3 cp ./faa-info.zip s3://aws-lambda-zips/
+      - aws lambda update-function-code --function-name airportInfoService --region us-east-1 --zip-file fileb://faa-info.zip
